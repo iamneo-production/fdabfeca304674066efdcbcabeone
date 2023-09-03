@@ -26,7 +26,7 @@ const ticTacToe=(element,index)=>{
             btns.forEach((btn)=>btn.disabled=true);
             return;
         }}
-        if(!cells.includes(")){
+        if(!cells.includes("){
             result.textContent='It\'s a draw!';
         return;
             }
@@ -34,7 +34,7 @@ const ticTacToe=(element,index)=>{
             result.textContent=`Current player:${currentPlayer}`;
         };
         const resetGame=()=>{
-        cells=[",",",",",",",","];
+        cells=[",",",",",",",",","];
         result.textContent=";
         btns.forEach((btn)=>{
             btn.textContent=";
@@ -42,6 +42,6 @@ const ticTacToe=(element,index)=>{
         });
     };
     btns.forEach((btn,i)=>{
-        btn.addEventListener('click),()=>ticTacToe(btn,i));
+        btn.addEventListener('click',()=>ticTacToe(btn,i));
     });
     document.querySelector('#reset').addEventListener('click',resetGame);
