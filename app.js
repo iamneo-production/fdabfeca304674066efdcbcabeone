@@ -26,13 +26,13 @@ const ticTacToe=(element,index)=>{
             btns.forEach((btn)=>btn.disabled=true);
             return;
         }}
-        if(!cells.includes(")){
+        if(!cells.includes(' ')){
             result.textContent='It\'s a draw!';
         return;
-            }
+        }
             currentPlayer=currentPlayer==='X'?'O':'X';
             result.textContent=`Current player:${currentPlayer}`;
-        };
+    };
         const resetGame=()=>{
         cells=[",",",",",",",",","];
         result.textContent=";
