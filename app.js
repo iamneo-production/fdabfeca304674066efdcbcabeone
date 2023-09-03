@@ -30,3 +30,15 @@ const ticTacToe=(element,index)=>{
             result.textContent='It\'s a draw!';
         return;
             }
+            currentPlayer=currentPlayer==='X'?'O':'X';
+            result.textContent=`Current player:${currentPlayer}`;
+        };
+        const resetGame=()=>{
+        cells=[",",",",",",",","];
+        result.textContent=";
+        btns.forEach((btn)=>{
+            btn.textContent=";
+            btn.disabled=false;
+        });
+    };
+    
