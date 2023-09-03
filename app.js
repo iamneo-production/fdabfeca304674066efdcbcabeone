@@ -26,7 +26,7 @@ const ticTacToe=(element,index)=>{
             btns.forEach((btn)=>btn.disabled=true);
             return;
         }}
-        if(!cells.includes("){
+        if(!cells.includes(")){
             result.textContent='It\'s a draw!';
         return;
             }
