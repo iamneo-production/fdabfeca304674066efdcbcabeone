@@ -1,4 +1,4 @@
-let cells=[",",",",",",",","];
+let cells=[",",",",",",",",","];
 let currentPlayer='X';
 let result=document.querySelector('.result');
 let btns=document.querySelectorAll('.btn');
@@ -41,4 +41,7 @@ const ticTacToe=(element,index)=>{
             btn.disabled=false;
         });
     };
-    
+    btns.forEach((btn,i)=>{
+        btn.addEventListener('click),()=>ticTacToe(btn,i));
+    });
+    document.querySelector('#reset').addEventListener('click',resetGame);
